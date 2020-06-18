@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
-get 'top' => 'homes#top'
+  get 'todolists/new'
+  get 'top' => 'homes#top'
+  post "todolists" => "todolists#create"
 
 end
